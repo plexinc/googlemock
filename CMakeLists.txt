@@ -94,6 +94,13 @@ cxx_library(gmock_main
 
 ########################################################################
 #
+# Plex - added install targets
+#
+install(TARGETS gmock gmock_main DESTINATION lib)
+install(DIRECTORY include/gmock DESTINATION include)
+
+########################################################################
+#
 # Google Mock's own tests.
 #
 # You can skip this section if you aren't interested in testing
